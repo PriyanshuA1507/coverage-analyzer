@@ -1,6 +1,6 @@
 # Verification Coverage Analyzer
 
-**Assignment 2 Submission**
+**Assignment  Submission**
 
 This project is a CLI tool designed to help verification engineers close coverage gaps faster. Instead of manually staring at coverage reports to figure out what tests to write, this tool parses the report, finds the holes, and uses an LLM (Gemini 2.0) to suggest specific, actionable test scenarios.
 
