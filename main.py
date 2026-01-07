@@ -6,7 +6,7 @@ from google import genai
 
 # CONFIGURATION 
 API_KEY = "YOUR_GEMINI_KEY_HERE"  # Keep this here for grading, even if using mock
-USE_MOCK_MODE = True              # Set to False to use real AI
+USE_MOCK_MODE = False              # Set to False to use real AI
 
 # Initialize Client
 client = genai.Client(api_key=API_KEY)
