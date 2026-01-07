@@ -1,0 +1,35 @@
+1. Parsing Report 
+{
+  "design": "gpu_core",
+  "overall_coverage": 40.0,
+  "covergroups": [
+    {
+      "name": "cg_memory",
+      "coverage": 40.0,
+      "coverpoints": [
+        {
+          "name": "cp_cache",
+          "bins": [
+            {
+              "name": "hit",
+              "range": "",
+              "hits": 0,
+              "covered": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "uncovered_bins": [
+    {
+      "covergroup": "cg_memory",
+      "coverpoint": "cp_cache",
+      "bin": "hit"
+    }
+  ],
+  "cross_coverage": []
+}
+
+ 2. Generating Suggestions (Mock Mode) 
+ERROR: Please insert your API Key in line 16 of main.py

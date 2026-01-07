@@ -1,0 +1,8 @@
+Design: gpu_core
+Date: 2026-01-08
+Overall Coverage: 40.0%
+Covergroup: cg_memory
+Coverage: 40.0%
+Coverpoint: cp_cache
+bin hit hits: 5000 covered
+bin miss hits: 0 UNCOVERED

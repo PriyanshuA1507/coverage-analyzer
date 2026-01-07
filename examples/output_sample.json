@@ -1,0 +1,166 @@
+1. Parsing Report 
+{
+  "design": "dma_controller",
+  "overall_coverage": 54.84,
+  "covergroups": [
+    {
+      "name": "cg_transfer_size",
+      "coverage": 75.0,
+      "coverpoints": [
+        {
+          "name": "cp_size",
+          "bins": [
+            {
+              "name": "small",
+              "range": "[0:255]",
+              "hits": 1523,
+              "covered": true
+            },
+            {
+              "name": "medium",
+              "range": "[256:1023]",
+              "hits": 892,
+              "covered": true
+            },
+            {
+              "name": "max",
+              "range": "[4096]",
+              "hits": 0,
+              "covered": false
+            }
+          ]
+        },
+        {
+          "name": "cp_burst_type",
+          "bins": [
+            {
+              "name": "single",
+              "range": "",
+              "hits": 2341,
+              "covered": true
+            },
+            {
+              "name": "incr",
+              "range": "",
+              "hits": 1822,
+              "covered": true
+            },
+            {
+              "name": "wrap",
+              "range": "",
+              "hits": 0,
+              "covered": false
+            },
+            {
+              "name": "fixed",
+              "range": "",
+              "hits": 234,
+              "covered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cg_channel_arbitration",
+      "coverage": 33.33,
+      "coverpoints": [
+        {
+          "name": "cp_active_channels",
+          "bins": [
+            {
+              "name": "one_channel",
+              "range": "",
+              "hits": 1200,
+              "covered": true
+            },
+            {
+              "name": "three_channels",
+              "range": "",
+              "hits": 0,
+              "covered": false
+            },
+            {
+              "name": "all_eight",
+              "range": "",
+              "hits": 0,
+              "covered": false
+            }
+          ]
+        },
+        {
+          "name": "cp_error_type",
+          "bins": [
+            {
+              "name": "no_error",
+              "range": "",
+              "hits": 1200,
+              "covered": true
+            },
+            {
+              "name": "decode_error",
+              "range": "",
+              "hits": 0,
+              "covered": false
+            }
+          ]
+        },
+        {
+          "name": "cp_error_recovery",
+          "bins": [
+            {
+              "name": "retry_success",
+              "range": "",
+              "hits": 0,
+              "covered": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "uncovered_bins": [
+    {
+      "covergroup": "cg_transfer_size",
+      "coverpoint": "cp_size",
+      "bin": "max[4096]"
+    },
+    {
+      "covergroup": "cg_transfer_size",
+      "coverpoint": "cp_burst_type",
+      "bin": "wrap"
+    },
+    {
+      "covergroup": "cg_channel_arbitration",
+      "coverpoint": "cp_active_channels",
+      "bin": "three_channels"
+    },
+    {
+      "covergroup": "cg_channel_arbitration",
+      "coverpoint": "cp_active_channels",
+      "bin": "all_eight"
+    },
+    {
+      "covergroup": "cg_channel_arbitration",
+      "coverpoint": "cp_error_type",
+      "bin": "decode_error"
+    },
+    {
+      "covergroup": "cg_channel_arbitration",
+      "coverpoint": "cp_error_recovery",
+      "bin": "retry_success"
+    }
+  ],
+  "cross_coverage": [
+    {
+      "name": "cross_size_burst",
+      "coverage": 50.0,
+      "uncovered": [
+        "<small, wrap>"
+      ]
+    }
+  ]
+}
+
+ 2. Generating Suggestions (Mock Mode) 
+ERROR: Please insert your API Key in line 16 of main.py
